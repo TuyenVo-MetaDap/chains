@@ -3514,23 +3514,23 @@
   "chainId": 211,
   "networkId": 0
 }, {
-  "name": "MAP Makalu",
-  "title": "MAP Testnet Makalu",
-  "chain": "MAP",
+  "name": "MAPO Makalu",
+  "title": "MAPO Testnet Makalu",
+  "chain": "MAPO",
   "rpc": ["https://testnet-rpc.maplabs.io"],
-  "faucets": ["https://faucet.maplabs.io"],
+  "faucets": ["https://faucet.mapprotocol.io"],
   "nativeCurrency": {
-    "name": "Makalu MAP",
-    "symbol": "MAP",
+    "name": "Makalu MAPO",
+    "symbol": "MAPO",
     "decimals": 18
   },
-  "infoURL": "https://maplabs.io",
+  "infoURL": "https://mapprotocol.io/",
   "shortName": "makalu",
   "chainId": 212,
   "networkId": 212,
   "explorers": [{
-    "name": "mapscan",
-    "url": "https://testnet.mapscan.io",
+    "name": "maposcan",
+    "url": "https://testnet.maposcan.io",
     "standard": "EIP3091"
   }]
 }, {
@@ -3989,6 +3989,21 @@
     "url": "https://explorer.lachain.network",
     "standard": "EIP3091"
   }]
+}, {
+  "name": "BPX Blockchain",
+  "chain": "BPX",
+  "icon": "bpx",
+  "rpc": ["https://rpc.mainnet.bpxchain.cc", "https://bpx-dataseed.infinex.cc"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "BPX",
+    "symbol": "BPX",
+    "decimals": 18
+  },
+  "infoURL": "https://bpxchain.cc",
+  "shortName": "bpx",
+  "chainId": 279,
+  "networkId": 279
 }, {
   "name": "zkSync Era Goerli Testnet (deprecated)",
   "status": "deprecated",
@@ -7538,7 +7553,7 @@
 }, {
   "name": "Humans.ai Mainnet",
   "chain": "Humans",
-  "rpc": ["https://jsonrpc.humans.nodestake.top", "https://humans-mainnet-evm.itrocket.net:443", "https://humans-evm-rpc.staketab.org:443", "https://evm.humans.stakepool.dev.br", "https://mainnet-humans-evm.konsortech.xyz", "https://evm-rpc.mainnet.humans.zone"],
+  "rpc": ["https://jsonrpc.humans.nodestake.top", "https://humans-mainnet-evm.itrocket.net", "https://humans-evm-rpc.staketab.org:443", "https://evm.humans.stakepool.dev.br", "https://mainnet-humans-evm.konsortech.xyz", "https://evm-rpc.mainnet.humans.zone", "https://json-rpc.humans.bh.rocks"],
   "faucets": [],
   "nativeCurrency": {
     "name": "HEART",
@@ -8987,6 +9002,34 @@
     "icon": "eon",
     "standard": "EIP3091"
   }]
+}, {
+  "name": "Mint Testnet",
+  "chain": "ETH",
+  "rpc": ["https://testnet-rpc.mintchain.io"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "Sepolia Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
+  "infoURL": "https://www.mintchain.io",
+  "shortName": "minttest",
+  "chainId": 1686,
+  "networkId": 1686,
+  "icon": "mintTestnet",
+  "explorers": [{
+    "name": "blockscout",
+    "url": "https://testnet-explorer.mintchain.io",
+    "icon": "mintTestnet",
+    "standard": "EIP3091"
+  }],
+  "parent": {
+    "type": "L2",
+    "chain": "eip155-1",
+    "bridges": [{
+      "url": "https://testnet-bridge.mintchain.io"
+    }]
+  }
 }, {
   "name": "LUDAN Mainnet",
   "chain": "LUDAN",
@@ -16216,6 +16259,26 @@
     "standard": "EIP3091"
   }]
 }, {
+  "name": "BEVM Testnet",
+  "chain": "BEVM",
+  "rpc": ["https://testnet.bevm.io/"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "BTC",
+    "symbol": "BTC",
+    "decimals": 18
+  },
+  "infoURL": "https://bevm.io",
+  "shortName": "bevm",
+  "chainId": 11503,
+  "networkId": 11503,
+  "icon": "bevmcanary",
+  "explorers": [{
+    "name": "bevm testnet scan",
+    "url": "https://scan-testnet.bevm.io",
+    "standard": "none"
+  }]
+}, {
   "name": "Sardis Testnet",
   "chain": "SRDX",
   "icon": "sardisTestnet",
@@ -17449,8 +17512,8 @@
     "standard": "EIP3091"
   }]
 }, {
-  "name": "MAP Mainnet",
-  "chain": "MAP",
+  "name": "MAP Protocol",
+  "chain": "MAPO",
   "icon": "map",
   "rpc": ["https://rpc.maplabs.io"],
   "faucets": [],
@@ -17459,14 +17522,14 @@
     "symbol": "MAPO",
     "decimals": 18
   },
-  "infoURL": "https://maplabs.io",
-  "shortName": "map",
+  "infoURL": "https://mapprotocol.io/",
+  "shortName": "mapo",
   "chainId": 22776,
   "networkId": 22776,
   "slip44": 60,
   "explorers": [{
-    "name": "mapscan",
-    "url": "https://mapscan.io",
+    "name": "maposcan",
+    "url": "https://maposcan.io",
     "standard": "EIP3091"
   }]
 }, {
@@ -22648,6 +22711,33 @@
     "url": "https://subnets.avax.network/dexalot",
     "standard": "EIP3091"
   }]
+}, {
+  "name": "Syndr L3 Sepolia",
+  "title": "Syndr L3 Sepolia Rollup Testnet",
+  "chain": "SYNDRSEPOLIA",
+  "rpc": ["https://sepolia.syndr.com/http", "wss://sepolia.syndr.com/ws"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "Sepolia Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
+  "infoURL": "https://syndr.com",
+  "shortName": "syndr",
+  "chainId": 444444,
+  "networkId": 444444,
+  "explorers": [{
+    "name": "Syndr L3 Sepolia Testnet Explorer",
+    "url": "https://sepolia-explorer.syndr.com",
+    "standard": "EIP3091"
+  }],
+  "parent": {
+    "type": "L2",
+    "chain": "eip155-421614",
+    "bridges": [{
+      "url": "https://sepolia-bridge.syndr.com"
+    }]
+  }
 }, {
   "name": "Weelink Testnet",
   "chain": "WLK",
